@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dadar Shop - My Wishlist">
+    <meta name="keywords" content="Dadar Shop, wishlist, saved items, favorites">
+    <meta name="author" content="Dadar Shop">
+    <title>My Wishlist - Dadar Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .wishlist-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:var(--space-6);}
+        .wishlist-product-card {background:var(--gray-50);border-radius:var(--radius-xl);overflow:hidden;transition:all var(--transition-fast);border:1px solid var(--gray-200);}
+        .wishlist-product-card:hover {box-shadow:var(--shadow-md);transform:translateY(-4px);}
+        .wishlist-product-image {width:100%;height:200px;background:var(--gray-200);display:flex;align-items:center;justify-content:center;font-size:var(--text-5xl);position:relative;overflow:hidden;}
+        .wishlist-product-badge {position:absolute;top:var(--space-3);right:var(--space-3);background:var(--error);color:var(--white);border:none;border-radius:var(--radius-full);width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:var(--text-lg);transition:all var(--transition-fast);}
+        .wishlist-product-content {padding:var(--space-4);}
+        .wishlist-product-title {font-size:var(--text-sm);color:var(--gray-900);margin-bottom:var(--space-3);font-weight:var(--font-semibold);}
+        .wishlist-product-price-current {font-size:var(--text-lg);font-weight:var(--font-bold);color:var(--primary);}
+        .btn-add-cart {display:block;width:100%;padding:var(--space-3);background:var(--primary);color:var(--white);border:none;border-radius:var(--radius-lg);font-weight:var(--font-semibold);cursor:pointer;transition:all var(--transition-fast);text-align:center;text-decoration:none;font-size:var(--text-sm);margin-bottom:var(--space-2);}
+        .btn-add-cart:hover {background:var(--primary-dark);}
+    </style>
+</head>
+<body>
+    <div class="top-bar"><div class="container"><div class="top-bar-content"><div class="top-bar-left"><span>Welcome to Dadar Shop!</span></div></div></div></div>
+    <header class="header"><div class="container"><div class="header-main"><a href="../../index.html" class="logo"><div class="logo-icon">DS</div><div class="logo-text"><div>Dadar <span>Shop</span></div></div></a><div class="header-actions"><div class="header-action" onclick="window.location.href='dashboard.html'"><span>👤</span><span>Account</span></div><div class="header-action" onclick="window.location.href='wishlist.html'"><span>🤍</span><span>Wishlist</span><span class="header-badge" id="wishlist-count">8</span></div><div class="header-action" onclick="window.location.href='../cart/cart.html'"><span>🛒</span><span>Cart</span><span class="header-badge" id="cart-count">5</span></div></div></div></div></header>
+    <main><div class="container"><div style="margin:var(--space-8) 0;"><h1>My Wishlist</h1><span style="font-size:var(--text-lg);color:var(--gray-600);">8 items</span></div><div class="wishlist-grid"><div class="wishlist-product-card"><div class="wishlist-product-image">📱<button class="wishlist-product-badge" onclick="removeFromWishlist(event)" title="Remove">×</button></div><div class="wishlist-product-content"><h3 class="wishlist-product-title">Wireless Bluetooth Earbuds Pro</h3><div class="wishlist-product-price-current">$59.99</div><button class="btn-add-cart" onclick="addToCart(event)">Add to Cart</button></div></div><div class="wishlist-product-card"><div class="wishlist-product-image">📱<button class="wishlist-product-badge" onclick="removeFromWishlist(event)">×</button></div><div class="wishlist-product-content"><h3 class="wishlist-product-title">Smart Watch Series X</h3><div class="wishlist-product-price-current">$129.99</div><button class="btn-add-cart" onclick="addToCart(event)">Add to Cart</button></div></div><div class="wishlist-product-card"><div class="wishlist-product-image">👕<button class="wishlist-product-badge" onclick="removeFromWishlist(event)">×</button></div><div class="wishlist-product-content"><h3 class="wishlist-product-title">Designer Leather Handbag</h3><div class="wishlist-product-price-current">$74.99</div><button class="btn-add-cart" onclick="addToCart(event)">Add to Cart</button></div></div><div class="wishlist-product-card"><div class="wishlist-product-image">👕<button class="wishlist-product-badge" onclick="removeFromWishlist(event)">×</button></div><div class="wishlist-product-content"><h3 class="wishlist-product-title">Summer Floral Dress</h3><div class="wishlist-product-price-current">$49.99</div><button class="btn-add-cart" onclick="addToCart(event)">Add to Cart</button></div></div><div class="wishlist-product-card"><div class="wishlist-product-image">👑<button class="wishlist-product-badge" onclick="removeFromWishlist(event)">×</button></div><div class="wishlist-product-content"><h3 class="wishlist-product-title">Noise Cancelling Headphones</h3><div class="wishlist-product-price-current">$199.99</div><button class="btn-add-cart" onclick="addToCart(event)">Add to Cart</button></div></div><div class="wishlist-product-card"><div class="wishlist-product-image">🏠<button class="wishlist-product-badge" onclick="removeFromWishlist(event)">×</button></div><div class="wishlist-product-content"><h3 class="wishlist-product-title">Modern LED Table Lamp</h3><div class="wishlist-product-price-current">$49.99</div><button class="btn-add-cart" onclick="addToCart(event)">Add to Cart</button></div></div><div class="wishlist-product-card"><div class="wishlist-product-image">💴<button class="wishlist-product-badge" onclick="removeFromWishlist(event)">×</button></div><div class="wishlist-product-content"><h3 class="wishlist-product-title">Premium Skincare Gift Set</h3><div class="wishlist-product-price-current">$54.99</div><button class="btn-add-cart" onclick="addToCart(event)">Add to Cart</button></div></div><div class="wishlist-product-card"><div class="wishlist-product-image">👕<button class="wishlist-product-badge" onclick="removeFromWishlist(event)">×</button></div><div class="wishlist-product-content"><h3 class="wishlist-product-title">Running Sneakers Pro</h3><div class="wishlist-product-price-current">$69.99</div><button class="btn-add-cart" onclick="addToCart(event)">Add to Cart</button></div></div></div></div></main>
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        function removeFromWishlist(event) {
+            event.preventDefault();
+            const card = event.target.closest('.wishlist-product-card');
+            card.style.opacity = '0';
+            setTimeout(() => card.remove(), 300);
+        }
+        function addToCart(event) {
+            event.preventDefault();
+            const button = event.target;
+            const originalText = button.textContent;
+            button.textContent = 'Added!';
+            setTimeout(() => button.textContent = originalText, 2000);
+        }
+    </script>
+</body>
+</html>

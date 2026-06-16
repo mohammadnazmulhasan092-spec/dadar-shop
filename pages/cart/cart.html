@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shopping Cart - Dadar Shop">
+    <title>Cart - Dadar Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <div class="top-bar"><div class="container"><div class="top-bar-content"><div class="top-bar-left"><span>Welcome to Dadar Shop!</span></div></div></div></div>
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <a href="../../index.html" class="logo"><div class="logo-icon">DS</div><div class="logo-text"><div>Dadar <span>Shop</span></div></div></a>
+                <div class="search-wrapper"><form class="search-bar"><input type="text" class="search-input" placeholder="Search..."><button class="search-btn">🔍</button></form></div>
+                <div class="header-actions">
+                    <div class="header-action" onclick="location.href='../auth/login.html'"><span>👤</span><span>Account</span></div>
+                    <div class="header-action"><span>🛒</span><span>Cart</span><span class="header-badge">5</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="breadcrumb"><a href="../../index.html">Home</a><span class="breadcrumb-separator">/</span><span>Shopping Cart</span></div>
+            <h1 style="margin:var(--space-6) 0;">Shopping Cart (5 items)</h1>
+            <div style="display:grid;grid-template-columns:1fr 360px;gap:var(--space-6);">
+                <div style="background:var(--white);border-radius:var(--radius-xl);padding:var(--space-6);">
+                    <div style="display:flex;gap:var(--space-4);padding:var(--space-4) 0;border-bottom:1px solid var(--gray-200);">
+                        <div style="width:100px;height:100px;border-radius:var(--radius-lg);background:var(--gray-200);display:flex;align-items:center;justify-content:center;font-size:var(--text-3xl);">🎧</div>
+                        <div style="flex:1;"><h4 style="margin-bottom:var(--space-2);">Wireless Bluetooth Earbuds Pro</h4><p style="color:var(--gray-500);font-size:var(--text-sm);">Color: White | Qty: 1</p><p style="color:var(--primary);font-weight:var(--font-bold);margin-top:var(--space-2);">$59.99</p></div>
+                        <button style="color:var(--gray-400);">🗑️</button>
+                    </div>
+                    <div style="display:flex;gap:var(--space-4);padding:var(--space-4) 0;border-bottom:1px solid var(--gray-200);">
+                        <div style="width:100px;height:100px;border-radius:var(--radius-lg);background:var(--gray-200);display:flex;align-items:center;justify-content:center;font-size:var(--text-3xl);">⌚</div>
+                        <div style="flex:1;"><h4 style="margin-bottom:var(--space-2);">Smart Watch Series X</h4><p style="color:var(--gray-500);font-size:var(--text-sm);">Color: Black | Qty: 2</p><p style="color:var(--primary);font-weight:var(--font-bold);margin-top:var(--space-2);">$259.98</p></div>
+                        <button style="color:var(--gray-400);">🗑️</button>
+                    </div>
+                    <div style="display:flex;gap:var(--space-4);padding:var(--space-4) 0;">
+                        <div style="width:100px;height:100px;border-radius:var(--radius-lg);background:var(--gray-200);display:flex;align-items:center;justify-content:center;font-size:var(--text-3xl);">🎧</div>
+                        <div style="flex:1;"><h4 style="margin-bottom:var(--space-2);">Noise Cancelling Headphones</h4><p style="color:var(--gray-500);font-size:var(--text-sm);">Color: Silver | Qty: 1</p><p style="color:var(--primary);font-weight:var(--font-bold);margin-top:var(--space-2);">$199.99</p></div>
+                        <button style="color:var(--gray-400);">🗑️</button>
+                    </div>
+                </div>
+                <div style="background:var(--white);border-radius:var(--radius-xl);padding:var(--space-6);height:fit-content;position:sticky;top:100px;">
+                    <h3 style="margin-bottom:var(--space-4);padding-bottom:var(--space-4);border-bottom:1px solid var(--gray-200);">Order Summary</h3>
+                    <div style="display:flex;justify-content:space-between;margin-bottom:var(--space-3);"><span>Subtotal</span><span>$519.96</span></div>
+                    <div style="display:flex;justify-content:space-between;margin-bottom:var(--space-3);"><span>Shipping</span><span style="color:var(--success);">Free</span></div>
+                    <div style="display:flex;justify-content:space-between;margin-bottom:var(--space-3);"><span>Tax</span><span>$41.60</span></div>
+                    <div style="display:flex;justify-content:space-between;font-size:var(--text-xl);font-weight:var(--font-bold);margin-bottom:var(--space-6);"><span>Total</span><span>$561.56</span></div>
+                    <a href="../checkout/checkout.html" class="btn btn-primary w-full">Proceed to Checkout</a>
+                    <a href="../../index.html" style="display:block;text-align:center;margin-top:var(--space-4);color:var(--primary);">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">&copy; 2026 Dadar Shop.</p></div></div></footer>
+    <nav class="mobile-nav"><div class="mobile-nav-items"><a href="../../index.html" class="mobile-nav-item"><span>🏠</span><span>Home</span></a><a href="cart.html" class="mobile-nav-item active"><span>🛒</span><span>Cart</span></a></div></nav>
+</body>
+</html>
