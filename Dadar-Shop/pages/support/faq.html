@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions - Find answers to common questions about Dadar Shop shopping, orders, and policies.">
+    <meta name="keywords" content="FAQ, frequently asked questions, help, support, Dadar Shop">
+    <meta name="author" content="Dadar Shop">
+    <title>FAQ - Dadar Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .faq-item {
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-3);
+            overflow: hidden;
+        }
+        .faq-question {
+            background: var(--white);
+            padding: var(--space-4);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: var(--font-semibold);
+            transition: all 0.3s;
+        }
+        .faq-question:hover {
+            background: var(--gray-50);
+        }
+        .faq-question.active {
+            background: var(--primary);
+            color: var(--white);
+        }
+        .faq-answer {
+            display: none;
+            background: var(--gray-50);
+            padding: var(--space-4);
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+        .faq-answer.active {
+            display: block;
+        }
+        .faq-toggle {
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        .faq-toggle.active {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span>Welcome to Dadar Shop!</span>
+                    <span class="top-bar-divider"></span>
+                    <span>Hotline: +880 1234-567890</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="track-order.html">Track Order</a>
+                    <span class="top-bar-divider"></span>
+                    <a href="help-center.html">Help Center</a>
+                    <span class="top-bar-divider"></span>
+                    <a href="../auth/login.html">Sell on Dadar Shop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">DS</div>
+                    <div class="logo-text">
+                        <div>Dadar <span>Shop</span></div>
+                        <div class="logo-tagline">Your Trusted Online Marketplace</div>
+                    </div>
+                </a>
+
+                <div class="search-wrapper">
+                    <form class="search-bar" action="../search/search-results.html" method="GET">
+                        <select class="search-category">
+                            <option value="all">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="beauty">Beauty</option>
+                            <option value="home-living">Home & Living</option>
+                            <option value="groceries">Groceries</option>
+                        </select>
+                        <input type="text" class="search-input" placeholder="Search for help topics..." name="q">
+                        <button type="submit" class="search-btn">&#128269; Search</button>
+                    </form>
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-action" onclick="window.location.href='../auth/login.html'">
+                        <span class="header-action-icon">&#128100;</span>
+                        <span class="header-action-text">Account</span>
+                    </div>
+                    <div class="header-action" onclick="window.location.href='../account/wishlist.html'">
+                        <span class="header-action-icon">&#9825;</span>
+                        <span class="header-action-text">Wishlist</span>
+                        <span class="header-badge">0</span>
+                    </div>
+                    <div class="header-action cart-preview" onclick="window.location.href='../cart/cart.html'">
+                        <span class="header-action-icon">&#128722;</span>
+                        <span class="header-action-text">Cart</span>
+                        <span class="header-badge">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-wrapper">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="../../categories/all-categories.html" class="nav-link">
+                            <span class="nav-link-icon">&#9776;</span>
+                            All Categories
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href="../../categories/electronics/index.html" class="nav-link">Electronics</a></li>
+                    <li class="nav-item"><a href="../../categories/fashion/index.html" class="nav-link">Fashion</a></li>
+                    <li class="nav-item"><a href="../../categories/beauty/index.html" class="nav-link">Beauty</a></li>
+                    <li class="nav-item"><a href="../../categories/home-living/index.html" class="nav-link">Home & Living</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div style="background: var(--gray-50); padding: var(--space-4) 0; border-bottom: 1px solid var(--gray-200);">
+        <div class="container">
+            <a href="../../index.html" style="color: var(--primary);">Home</a> / <span style="color: var(--gray-600);">FAQ</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Page Header -->
+            <section style="padding: var(--space-10) 0; text-align: center;">
+                <h1 style="font-size: var(--text-4xl); margin-bottom: var(--space-4);">Frequently Asked Questions</h1>
+                <p style="font-size: var(--text-lg); color: var(--gray-600);">Click on any question to expand and view the answer.</p>
+            </section>
+
+            <!-- Account & Registration -->
+            <section style="margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 2px solid var(--primary);">Account & Registration</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>How do I create a Dadar Shop account?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Click the "Sign Up" button on our homepage, enter your email address and create a password, then verify your email. You can also sign up using your social media accounts for faster registration.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>Is it free to create an account?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, creating a Dadar Shop account is completely free. You only pay for items you purchase and applicable shipping charges.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>How do I reset my password?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Click "Forgot Password" on the login page, enter your email address, and we'll send you a password reset link. Follow the link to create a new password.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>How do I update my profile information?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Go to your Account Settings and click "Edit Profile." You can update your name, email, phone number, and profile picture. Changes take effect immediately.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shopping & Orders -->
+            <section style="margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 2px solid var(--secondary);">Shopping & Orders</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>Can I change my order after placing it?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Orders can be modified only before they're dispatched. Go to your order page and click "Modify Order." If your order has already been shipped, you'll need to return it or contact our support team.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>What payment methods do you accept?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        We accept Visa, Mastercard, debit cards, mobile wallets (bKash, Nagad), bank transfers, and cash on delivery (COD). All payment methods are secure and encrypted.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>Are there any hidden charges?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        No, all charges are displayed clearly before you complete your purchase. The final price includes product cost, shipping, and any applicable taxes. No hidden charges are added.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>Do you offer international shipping?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we ship to 8 countries across South and Southeast Asia. Check our Shipping Policy page for the complete list of countries where we deliver.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products & Categories -->
+            <section style="margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 2px solid var(--accent);">Products & Categories</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>How do I search for specific products?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Use the search bar at the top of the page to enter your product name. You can also filter by category, brand, price range, and customer ratings to narrow down your search.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>Are product prices fixed?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Prices can vary based on seller, demand, and promotions. We recommend comparing prices and checking for deals. Prices are locked once you add items to your cart.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>How do I know if a product is genuine?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        All sellers on Dadar Shop are verified. We have a strict policy against counterfeit products. Check seller ratings and product reviews. Report any suspicious items immediately.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>Can I view similar products?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, on each product page you'll find a "Similar Products" section showing related items. You can also use our recommendations based on your browsing history.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shipping & Delivery -->
+            <section style="margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 2px solid var(--primary);">Shipping & Delivery</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>How long does delivery usually take?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Standard delivery takes 3-5 business days. Express delivery is available for 1-2 day delivery to selected areas. Delivery times may vary based on location and product availability.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>What are the shipping costs?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Free shipping on orders over $50. Standard shipping costs $5, express shipping costs $10. Some items and sellers offer free shipping regardless of order value.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>How do I track my order?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        You'll receive a tracking number via email. Visit our Track Order page, enter your tracking number, and get real-time updates on your package location and delivery status.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>What if my package arrives damaged?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Contact our support team immediately with photos of the damage. We'll arrange a full refund or replacement at no cost to you within 48 hours of delivery.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Returns & Refunds -->
+            <section style="margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 2px solid var(--secondary);">Returns & Refunds</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>What is your return policy?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Most items can be returned within 30 days of delivery. Products must be unused and in original packaging with all accessories included. Some items like food and cosmetics cannot be returned.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>How do I initiate a return?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Log into your account, go to My Orders, select the item, and click "Return Item." Fill out the return reason and follow the instructions. A return label will be generated for you to arrange a pickup.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>How long does a refund take?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Refunds are processed within 5-7 business days after we receive and inspect the returned item. The refund will be credited back to your original payment method.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active');">
+                        <span>Will I be charged for return shipping?</span>
+                        <span class="faq-toggle">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        If the item is defective or incorrect, return shipping is free. For other returns, the return shipping cost will be deducted from your refund amount.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Still Need Help? -->
+            <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); border-radius: var(--radius-xl); padding: var(--space-10); text-align: center; color: var(--white); margin-bottom: var(--space-10);">
+                <h2 style="color: var(--white); margin-bottom: var(--space-4);">Didn't find your answer?</h2>
+                <p style="margin-bottom: var(--space-6); opacity: 0.9;">We're here to help! Contact our support team or visit our help center for more assistance.</p>
+                <div style="display: flex; gap: var(--space-4); justify-content: center;">
+                    <a href="contact.html" class="btn btn-white">Contact Us</a>
+                    <a href="help-center.html" class="btn btn-white" style="background: rgba(255,255,255,0.2); border: 2px solid white;">Help Center</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="../../index.html" class="footer-logo">
+                        <div style="width: 40px; height: 40px; background: var(--primary); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: var(--font-bold);">DS</div>
+                        <h3>Dadar Shop</h3>
+                    </a>
+                    <p class="footer-desc">Your Trusted Online Marketplace. Shop millions of products from trusted sellers with fast delivery and secure payment options.</p>
+                    <div class="footer-social">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">in</a>
+                        <a href="#">yt</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Dadar Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

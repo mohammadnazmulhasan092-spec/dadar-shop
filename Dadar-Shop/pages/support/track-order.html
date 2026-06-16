@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track Order - Monitor your package and get real-time updates on your Dadar Shop order.">
+    <meta name="keywords" content="track order, order tracking, tracking number, delivery status, Dadar Shop">
+    <meta name="author" content="Dadar Shop">
+    <title>Track Order - Dadar Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span>Welcome to Dadar Shop!</span>
+                    <span class="top-bar-divider"></span>
+                    <span>Hotline: +880 1234-567890</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="track-order.html">Track Order</a>
+                    <span class="top-bar-divider"></span>
+                    <a href="help-center.html">Help Center</a>
+                    <span class="top-bar-divider"></span>
+                    <a href="../auth/login.html">Sell on Dadar Shop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">DS</div>
+                    <div class="logo-text">
+                        <div>Dadar <span>Shop</span></div>
+                        <div class="logo-tagline">Your Trusted Online Marketplace</div>
+                    </div>
+                </a>
+
+                <div class="search-wrapper">
+                    <form class="search-bar" action="../search/search-results.html" method="GET">
+                        <select class="search-category">
+                            <option value="all">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="beauty">Beauty</option>
+                            <option value="home-living">Home & Living</option>
+                            <option value="groceries">Groceries</option>
+                        </select>
+                        <input type="text" class="search-input" placeholder="Search for products..." name="q">
+                        <button type="submit" class="search-btn">&#128269; Search</button>
+                    </form>
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-action" onclick="window.location.href='../auth/login.html'">
+                        <span class="header-action-icon">&#128100;</span>
+                        <span class="header-action-text">Account</span>
+                    </div>
+                    <div class="header-action" onclick="window.location.href='../account/wishlist.html'">
+                        <span class="header-action-icon">&#9825;</span>
+                        <span class="header-action-text">Wishlist</span>
+                        <span class="header-badge">0</span>
+                    </div>
+                    <div class="header-action cart-preview" onclick="window.location.href='../cart/cart.html'">
+                        <span class="header-action-icon">&#128722;</span>
+                        <span class="header-action-text">Cart</span>
+                        <span class="header-badge">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-wrapper">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="../../categories/all-categories.html" class="nav-link">
+                            <span class="nav-link-icon">&#9776;</span>
+                            All Categories
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href="../../categories/electronics/index.html" class="nav-link">Electronics</a></li>
+                    <li class="nav-item"><a href="../../categories/fashion/index.html" class="nav-link">Fashion</a></li>
+                    <li class="nav-item"><a href="../../categories/beauty/index.html" class="nav-link">Beauty</a></li>
+                    <li class="nav-item"><a href="../../categories/home-living/index.html" class="nav-link">Home & Living</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div style="background: var(--gray-50); padding: var(--space-4) 0; border-bottom: 1px solid var(--gray-200);">
+        <div class="container">
+            <a href="../../index.html" style="color: var(--primary);">Home</a> / <span style="color: var(--gray-600);">Track Order</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Page Header -->
+            <section style="padding: var(--space-10) 0; text-align: center;">
+                <h1 style="font-size: var(--text-4xl); margin-bottom: var(--space-4);">Track Your Order</h1>
+                <p style="font-size: var(--text-lg); color: var(--gray-600);">Enter your tracking number to see the status of your delivery.</p>
+            </section>
+
+            <!-- Tracking Form -->
+            <section style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-10); box-shadow: var(--shadow); margin-bottom: var(--space-10); max-width: 600px; margin-left: auto; margin-right: auto;">
+                <form style="display: grid; gap: var(--space-6);">
+                    <div>
+                        <label style="display: block; margin-bottom: var(--space-2); font-weight: var(--font-semibold);">Tracking Number *</label>
+                        <input type="text" placeholder="Enter your tracking number (e.g., DS123456789)" required style="width: 100%; padding: var(--space-4); border: 1px solid var(--gray-300); border-radius: var(--radius-lg); font-size: var(--text-base); font-family: inherit;">
+                        <p style="font-size: var(--text-sm); color: var(--gray-500); margin-top: var(--space-2);">You can find this in your order confirmation email.</p>
+                    </div>
+
+                    <div>
+                        <label style="display: block; margin-bottom: var(--space-2); font-weight: var(--font-semibold);">Email Address *</label>
+                        <input type="email" placeholder="Enter your email address" required style="width: 100%; padding: var(--space-4); border: 1px solid var(--gray-300); border-radius: var(--radius-lg); font-size: var(--text-base); font-family: inherit;">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Track My Order</button>
+                </form>
+            </section>
+
+            <!-- Sample Tracking Result -->
+            <section style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-10); box-shadow: var(--shadow); margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-8);">Order Status Example</h2>
+
+                <!-- Order Info Card -->
+                <div style="background: var(--gray-50); border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-8);">
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4);">
+                        <div>
+                            <p style="font-size: var(--text-xs); color: var(--gray-600); font-weight: var(--font-semibold); margin-bottom: var(--space-1);">TRACKING NUMBER</p>
+                            <p style="font-weight: var(--font-bold);">DS123456789</p>
+                        </div>
+                        <div>
+                            <p style="font-size: var(--text-xs); color: var(--gray-600); font-weight: var(--font-semibold); margin-bottom: var(--space-1);">ORDER DATE</p>
+                            <p style="font-weight: var(--font-bold);">June 10, 2026</p>
+                        </div>
+                        <div>
+                            <p style="font-size: var(--text-xs); color: var(--gray-600); font-weight: var(--font-semibold); margin-bottom: var(--space-1);">ESTIMATED DELIVERY</p>
+                            <p style="font-weight: var(--font-bold);">June 15, 2026</p>
+                        </div>
+                        <div>
+                            <p style="font-size: var(--text-xs); color: var(--gray-600); font-weight: var(--font-semibold); margin-bottom: var(--space-1);">CARRIER</p>
+                            <p style="font-weight: var(--font-bold);">Express Delivery</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <h3 style="margin-bottom: var(--space-6);">Delivery Timeline</h3>
+                <div style="position: relative; padding-left: var(--space-8);">
+                    <div style="border-left: 3px solid var(--primary); padding-left: var(--space-6);">
+                        <!-- Delivered -->
+                        <div style="position: relative; margin-bottom: var(--space-6);">
+                            <div style="position: absolute; left: -28px; top: 0; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; border: 3px solid white;"></div>
+                            <div style="background: var(--gray-50); border-radius: var(--radius-lg); padding: var(--space-4);">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <h4 style="margin-bottom: var(--space-1); color: var(--primary);">Delivered</h4>
+                                        <p style="color: var(--gray-600); font-size: var(--text-sm);">Your order has been delivered successfully</p>
+                                    </div>
+                                    <span style="font-weight: var(--font-semibold);">June 13, 2026 10:30 AM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Out for Delivery -->
+                        <div style="position: relative; margin-bottom: var(--space-6);">
+                            <div style="position: absolute; left: -28px; top: 0; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; border: 3px solid white;"></div>
+                            <div style="background: var(--gray-50); border-radius: var(--radius-lg); padding: var(--space-4);">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <h4 style="margin-bottom: var(--space-1); color: var(--primary);">Out for Delivery</h4>
+                                        <p style="color: var(--gray-600); font-size: var(--text-sm);">Your package is on its way to your address</p>
+                                    </div>
+                                    <span style="font-weight: var(--font-semibold);">June 13, 2026 8:00 AM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- In Transit -->
+                        <div style="position: relative; margin-bottom: var(--space-6);">
+                            <div style="position: absolute; left: -28px; top: 0; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; border: 3px solid white;"></div>
+                            <div style="background: var(--gray-50); border-radius: var(--radius-lg); padding: var(--space-4);">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <h4 style="margin-bottom: var(--space-1); color: var(--primary);">In Transit</h4>
+                                        <p style="color: var(--gray-600); font-size: var(--text-sm);">Package is in transit to your destination</p>
+                                    </div>
+                                    <span style="font-weight: var(--font-semibold);">June 11, 2026 5:15 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Shipped -->
+                        <div style="position: relative; margin-bottom: var(--space-6);">
+                            <div style="position: absolute; left: -28px; top: 0; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; border: 3px solid white;"></div>
+                            <div style="background: var(--gray-50); border-radius: var(--radius-lg); padding: var(--space-4);">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <h4 style="margin-bottom: var(--space-1); color: var(--primary);">Shipped</h4>
+                                        <p style="color: var(--gray-600); font-size: var(--text-sm);">Your package has been picked up by the carrier</p>
+                                    </div>
+                                    <span style="font-weight: var(--font-semibold);">June 10, 2026 2:45 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Order Placed -->
+                        <div style="position: relative;">
+                            <div style="position: absolute; left: -28px; top: 0; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; border: 3px solid white;"></div>
+                            <div style="background: var(--gray-50); border-radius: var(--radius-lg); padding: var(--space-4);">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <h4 style="margin-bottom: var(--space-1); color: var(--primary);">Order Placed</h4>
+                                        <p style="color: var(--gray-600); font-size: var(--text-sm);">Your order has been confirmed</p>
+                                    </div>
+                                    <span style="font-weight: var(--font-semibold);">June 10, 2026 10:20 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="../../index.html" class="footer-logo">
+                        <div style="width: 40px; height: 40px; background: var(--primary); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: var(--font-bold);">DS</div>
+                        <h3>Dadar Shop</h3>
+                    </a>
+                    <p class="footer-desc">Your Trusted Online Marketplace. Shop millions of products from trusted sellers with fast delivery and secure payment options.</p>
+                    <div class="footer-social">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">in</a>
+                        <a href="#">yt</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Dadar Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
