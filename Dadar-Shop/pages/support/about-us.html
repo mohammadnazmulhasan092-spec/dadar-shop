@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Dadar Shop - Learn about our mission, company history, and the team behind your trusted online marketplace.">
+    <meta name="keywords" content="Dadar Shop about, company mission, history, team">
+    <meta name="author" content="Dadar Shop">
+    <title>About Us - Dadar Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span>Welcome to Dadar Shop!</span>
+                    <span class="top-bar-divider"></span>
+                    <span>Hotline: +880 1234-567890</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="track-order.html">Track Order</a>
+                    <span class="top-bar-divider"></span>
+                    <a href="help-center.html">Help Center</a>
+                    <span class="top-bar-divider"></span>
+                    <a href="../auth/login.html">Sell on Dadar Shop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">DS</div>
+                    <div class="logo-text">
+                        <div>Dadar <span>Shop</span></div>
+                        <div class="logo-tagline">Your Trusted Online Marketplace</div>
+                    </div>
+                </a>
+
+                <div class="search-wrapper">
+                    <form class="search-bar" action="../search/search-results.html" method="GET">
+                        <select class="search-category">
+                            <option value="all">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="beauty">Beauty</option>
+                            <option value="home-living">Home & Living</option>
+                            <option value="groceries">Groceries</option>
+                        </select>
+                        <input type="text" class="search-input" placeholder="Search for products..." name="q">
+                        <button type="submit" class="search-btn">&#128269; Search</button>
+                    </form>
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-action" onclick="window.location.href='../auth/login.html'">
+                        <span class="header-action-icon">&#128100;</span>
+                        <span class="header-action-text">Account</span>
+                    </div>
+                    <div class="header-action" onclick="window.location.href='../account/wishlist.html'">
+                        <span class="header-action-icon">&#9825;</span>
+                        <span class="header-action-text">Wishlist</span>
+                        <span class="header-badge">0</span>
+                    </div>
+                    <div class="header-action cart-preview" onclick="window.location.href='../cart/cart.html'">
+                        <span class="header-action-icon">&#128722;</span>
+                        <span class="header-action-text">Cart</span>
+                        <span class="header-badge">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-wrapper">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="../../categories/all-categories.html" class="nav-link">
+                            <span class="nav-link-icon">&#9776;</span>
+                            All Categories
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href="../../categories/electronics/index.html" class="nav-link">Electronics</a></li>
+                    <li class="nav-item"><a href="../../categories/fashion/index.html" class="nav-link">Fashion</a></li>
+                    <li class="nav-item"><a href="../../categories/beauty/index.html" class="nav-link">Beauty</a></li>
+                    <li class="nav-item"><a href="../../categories/home-living/index.html" class="nav-link">Home & Living</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div style="background: var(--gray-50); padding: var(--space-4) 0; border-bottom: 1px solid var(--gray-200);">
+        <div class="container">
+            <a href="../../index.html" style="color: var(--primary);">Home</a> / <span style="color: var(--gray-600);">About Us</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section style="padding: var(--space-10) 0; text-align: center;">
+                <h1 style="font-size: var(--text-4xl); margin-bottom: var(--space-4);">About Dadar Shop</h1>
+                <p style="font-size: var(--text-lg); color: var(--gray-600); max-width: 700px; margin: 0 auto;">Your trusted online marketplace connecting millions of buyers and sellers across the globe.</p>
+            </section>
+
+            <!-- Mission & Vision -->
+            <section style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-10); align-items: center;">
+                <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); border-radius: var(--radius-xl); padding: var(--space-10); color: var(--white);">
+                    <h2 style="margin-bottom: var(--space-4); color: var(--white);">Our Mission</h2>
+                    <p style="line-height: 1.8; opacity: 0.95;">To empower millions of customers and entrepreneurs by making online shopping accessible, affordable, and enjoyable. We are committed to providing exceptional value through a wide selection of quality products and outstanding customer service.</p>
+                </div>
+                <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-10); box-shadow: var(--shadow);">
+                    <h2 style="margin-bottom: var(--space-4);">Our Vision</h2>
+                    <p style="color: var(--gray-600); line-height: 1.8;">To become the most customer-centric online marketplace in South Asia, known for our integrity, innovation, and commitment to creating positive change in the communities we serve.</p>
+                </div>
+            </section>
+
+            <!-- Company Stats -->
+            <section style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-10); box-shadow: var(--shadow); margin-bottom: var(--space-10);">
+                <h2 style="text-align: center; margin-bottom: var(--space-8);">By The Numbers</h2>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); text-align: center;">
+                    <div>
+                        <div style="font-size: var(--text-4xl); font-weight: var(--font-bold); color: var(--primary); margin-bottom: var(--space-2);">5M+</div>
+                        <p style="color: var(--gray-600);">Active Users</p>
+                    </div>
+                    <div>
+                        <div style="font-size: var(--text-4xl); font-weight: var(--font-bold); color: var(--secondary); margin-bottom: var(--space-2);">50K+</div>
+                        <p style="color: var(--gray-600);">Sellers</p>
+                    </div>
+                    <div>
+                        <div style="font-size: var(--text-4xl); font-weight: var(--font-bold); color: var(--accent); margin-bottom: var(--space-2);">2M+</div>
+                        <p style="color: var(--gray-600);">Products</p>
+                    </div>
+                    <div>
+                        <div style="font-size: var(--text-4xl); font-weight: var(--font-bold); color: var(--primary); margin-bottom: var(--space-2);">98%</div>
+                        <p style="color: var(--gray-600);">Satisfaction Rate</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Company History -->
+            <section style="margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-8);">Our Journey</h2>
+                <div style="position: relative;">
+                    <div style="border-left: 3px solid var(--primary); padding-left: var(--space-8);">
+                        <div style="position: relative; margin-bottom: var(--space-8);">
+                            <div style="position: absolute; left: -19px; top: 0; width: 15px; height: 15px; background: var(--primary); border-radius: 50%;"></div>
+                            <h4 style="color: var(--primary); margin-bottom: var(--space-2);">2015 - Founded</h4>
+                            <p style="color: var(--gray-600);">Dadar Shop was founded with a vision to revolutionize online shopping in South Asia. Starting with just 50 sellers, we quickly gained customer trust through quality products and reliable service.</p>
+                        </div>
+
+                        <div style="position: relative; margin-bottom: var(--space-8);">
+                            <div style="position: absolute; left: -19px; top: 0; width: 15px; height: 15px; background: var(--secondary); border-radius: 50%;"></div>
+                            <h4 style="color: var(--secondary); margin-bottom: var(--space-2);">2017 - Rapid Growth</h4>
+                            <p style="color: var(--gray-600);">Expanded operations to multiple cities and introduced mobile app. User base grew to 500K and we achieved break-even profitability.</p>
+                        </div>
+
+                        <div style="position: relative; margin-bottom: var(--space-8);">
+                            <div style="position: absolute; left: -19px; top: 0; width: 15px; height: 15px; background: var(--accent); border-radius: 50%;"></div>
+                            <h4 style="color: var(--accent); margin-bottom: var(--space-2);">2019 - Market Leader</h4>
+                            <p style="color: var(--gray-600);">Became the leading online marketplace in the region with 2M users and 10K sellers. Introduced flash sales and expanded product categories.</p>
+                        </div>
+
+                        <div style="position: relative;">
+                            <div style="position: absolute; left: -19px; top: 0; width: 15px; height: 15px; background: var(--primary); border-radius: 50%;"></div>
+                            <h4 style="color: var(--primary); margin-bottom: var(--space-2);">2024 - Global Expansion</h4>
+                            <p style="color: var(--gray-600);">Reached 5M users with presence in 8 countries across South Asia and Southeast Asia. Became industry benchmark for customer satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Core Values -->
+            <section style="margin-bottom: var(--space-10);">
+                <h2 style="text-align: center; margin-bottom: var(--space-8);">Our Core Values</h2>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6);">
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow); text-align: center;">
+                        <div style="font-size: 48px; margin-bottom: var(--space-3);">&#129309;</div>
+                        <h3>Integrity</h3>
+                        <p style="color: var(--gray-600); font-size: var(--text-sm);">We conduct business with honesty and transparency, building trust with our customers and partners.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow); text-align: center;">
+                        <div style="font-size: 48px; margin-bottom: var(--space-3);">&#128161;</div>
+                        <h3>Innovation</h3>
+                        <p style="color: var(--gray-600); font-size: var(--text-sm);">We embrace new ideas and technologies to continuously improve the shopping experience.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow); text-align: center;">
+                        <div style="font-size: 48px; margin-bottom: var(--space-3);">&#128077;</div>
+                        <h3>Excellence</h3>
+                        <p style="color: var(--gray-600); font-size: var(--text-sm);">We strive for excellence in everything we do, from products to customer service.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow); text-align: center;">
+                        <div style="font-size: 48px; margin-bottom: var(--space-3);">&#127802;</div>
+                        <h3>Sustainability</h3>
+                        <p style="color: var(--gray-600); font-size: var(--text-sm);">We care about the environment and work towards sustainable business practices.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section style="margin-bottom: var(--space-10);">
+                <h2 style="text-align: center; margin-bottom: var(--space-8);">Meet Our Leadership</h2>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);">
+                    <div style="background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow);">
+                        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); height: 200px; display: flex; align-items: center; justify-content: center; font-size: 80px;">&#128100;</div>
+                        <div style="padding: var(--space-6);">
+                            <h3 style="margin-bottom: var(--space-1);">Ahmad Rahman</h3>
+                            <p style="color: var(--primary); font-weight: var(--font-semibold); margin-bottom: var(--space-3);">Founder & CEO</p>
+                            <p style="color: var(--gray-600); font-size: var(--text-sm);">Visionary entrepreneur with 20+ years of experience in e-commerce and retail.</p>
+                        </div>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow);">
+                        <div style="background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%); height: 200px; display: flex; align-items: center; justify-content: center; font-size: 80px;">&#128100;</div>
+                        <div style="padding: var(--space-6);">
+                            <h3 style="margin-bottom: var(--space-1);">Fatima Khan</h3>
+                            <p style="color: var(--secondary); font-weight: var(--font-semibold); margin-bottom: var(--space-3);">Chief Operating Officer</p>
+                            <p style="color: var(--gray-600); font-size: var(--text-sm);">Operations expert driving efficiency and scaling our business operations.</p>
+                        </div>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow);">
+                        <div style="background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%); height: 200px; display: flex; align-items: center; justify-content: center; font-size: 80px;">&#128100;</div>
+                        <div style="padding: var(--space-6);">
+                            <h3 style="margin-bottom: var(--space-1);">Karim Ahmed</h3>
+                            <p style="color: var(--accent); font-weight: var(--font-semibold); margin-bottom: var(--space-3);">Chief Technology Officer</p>
+                            <p style="color: var(--gray-600); font-size: var(--text-sm);">Tech leader building scalable systems and innovative solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); border-radius: var(--radius-xl); padding: var(--space-10); text-align: center; color: var(--white); margin-bottom: var(--space-10);">
+                <h2 style="color: var(--white); margin-bottom: var(--space-4);">Join Our Growing Community</h2>
+                <p style="margin-bottom: var(--space-6); opacity: 0.9; font-size: var(--text-lg);">Whether you're a buyer or seller, be part of the Dadar Shop family.</p>
+                <div style="display: flex; gap: var(--space-4); justify-content: center;">
+                    <a href="contact.html" class="btn btn-white">Get In Touch</a>
+                    <a href="../../index.html" class="btn btn-white" style="background: rgba(255,255,255,0.2); border: 2px solid white;">Start Shopping</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="../../index.html" class="footer-logo">
+                        <div style="width: 40px; height: 40px; background: var(--primary); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: var(--font-bold);">DS</div>
+                        <h3>Dadar Shop</h3>
+                    </a>
+                    <p class="footer-desc">Your Trusted Online Marketplace. Shop millions of products from trusted sellers with fast delivery and secure payment options.</p>
+                    <div class="footer-social">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">in</a>
+                        <a href="#">yt</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="about-us.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="../blog/blog-listing.html">Blog</a>
+                        <a href="help-center.html">Help Center</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Customer Service</h4>
+                    <div class="footer-links">
+                        <a href="track-order.html">Track Order</a>
+                        <a href="../account/orders.html">My Orders</a>
+                        <a href="../account/wishlist.html">Wishlist</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="../auth/login.html">Seller Center</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Policies</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="return-policy.html">Return Policy</a>
+                        <a href="shipping-policy.html">Shipping Policy</a>
+                        <a href="warranty.html">Warranty</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <div class="footer-links">
+                        <a href="tel:+8801234567890">&#128222; +880 1234-567890</a>
+                        <a href="mailto:support@dadarshop.com">&#9993; support@dadarshop.com</a>
+                        <p style="color: var(--gray-400); margin-top: var(--space-4);">&#128205; 123 Shopping Street<br>Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Dadar Shop. All Rights Reserved.</p>
+                <div class="footer-payments">
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">Visa</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">Mastercard</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">bKash</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">Nagad</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">COD</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

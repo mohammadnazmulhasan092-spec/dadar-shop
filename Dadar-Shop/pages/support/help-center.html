@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Help Center - Find answers to common questions about Dadar Shop, orders, shipping, and more.">
+    <meta name="keywords" content="help center, FAQ, support, customer service, Dadar Shop help">
+    <meta name="author" content="Dadar Shop">
+    <title>Help Center - Dadar Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span>Welcome to Dadar Shop!</span>
+                    <span class="top-bar-divider"></span>
+                    <span>Hotline: +880 1234-567890</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="track-order.html">Track Order</a>
+                    <span class="top-bar-divider"></span>
+                    <a href="help-center.html">Help Center</a>
+                    <span class="top-bar-divider"></span>
+                    <a href="../auth/login.html">Sell on Dadar Shop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">DS</div>
+                    <div class="logo-text">
+                        <div>Dadar <span>Shop</span></div>
+                        <div class="logo-tagline">Your Trusted Online Marketplace</div>
+                    </div>
+                </a>
+
+                <div class="search-wrapper">
+                    <form class="search-bar" action="../search/search-results.html" method="GET">
+                        <select class="search-category">
+                            <option value="all">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="beauty">Beauty</option>
+                            <option value="home-living">Home & Living</option>
+                            <option value="groceries">Groceries</option>
+                        </select>
+                        <input type="text" class="search-input" placeholder="Search for help topics..." name="q">
+                        <button type="submit" class="search-btn">&#128269; Search</button>
+                    </form>
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-action" onclick="window.location.href='../auth/login.html'">
+                        <span class="header-action-icon">&#128100;</span>
+                        <span class="header-action-text">Account</span>
+                    </div>
+                    <div class="header-action" onclick="window.location.href='../account/wishlist.html'">
+                        <span class="header-action-icon">&#9825;</span>
+                        <span class="header-action-text">Wishlist</span>
+                        <span class="header-badge">0</span>
+                    </div>
+                    <div class="header-action cart-preview" onclick="window.location.href='../cart/cart.html'">
+                        <span class="header-action-icon">&#128722;</span>
+                        <span class="header-action-text">Cart</span>
+                        <span class="header-badge">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-wrapper">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="../../categories/all-categories.html" class="nav-link">
+                            <span class="nav-link-icon">&#9776;</span>
+                            All Categories
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href="../../categories/electronics/index.html" class="nav-link">Electronics</a></li>
+                    <li class="nav-item"><a href="../../categories/fashion/index.html" class="nav-link">Fashion</a></li>
+                    <li class="nav-item"><a href="../../categories/beauty/index.html" class="nav-link">Beauty</a></li>
+                    <li class="nav-item"><a href="../../categories/home-living/index.html" class="nav-link">Home & Living</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div style="background: var(--gray-50); padding: var(--space-4) 0; border-bottom: 1px solid var(--gray-200);">
+        <div class="container">
+            <a href="../../index.html" style="color: var(--primary);">Home</a> / <span style="color: var(--gray-600);">Help Center</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Page Header -->
+            <section style="padding: var(--space-10) 0; text-align: center;">
+                <h1 style="font-size: var(--text-4xl); margin-bottom: var(--space-4);">Help Center</h1>
+                <p style="font-size: var(--text-lg); color: var(--gray-600);">Find answers to your questions about shopping, orders, and more.</p>
+            </section>
+
+            <!-- Help Categories -->
+            <section style="margin-bottom: var(--space-10);">
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); margin-bottom: var(--space-10);">
+                    <a href="#orders" style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); text-align: center; text-decoration: none; box-shadow: var(--shadow); transition: all 0.3s;">
+                        <div style="font-size: 48px; margin-bottom: var(--space-3);">&#128722;</div>
+                        <h3 style="color: var(--primary);">Orders</h3>
+                        <p style="color: var(--gray-600); font-size: var(--text-sm);">Placing and managing orders</p>
+                    </a>
+                    <a href="#shipping" style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); text-align: center; text-decoration: none; box-shadow: var(--shadow); transition: all 0.3s;">
+                        <div style="font-size: 48px; margin-bottom: var(--space-3);">&#128666;</div>
+                        <h3 style="color: var(--secondary);">Shipping</h3>
+                        <p style="color: var(--gray-600); font-size: var(--text-sm);">Delivery and tracking</p>
+                    </a>
+                    <a href="#payment" style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); text-align: center; text-decoration: none; box-shadow: var(--shadow); transition: all 0.3s;">
+                        <div style="font-size: 48px; margin-bottom: var(--space-3);">&#128179;</div>
+                        <h3 style="color: var(--accent);">Payment</h3>
+                        <p style="color: var(--gray-600); font-size: var(--text-sm);">Payment methods and billing</p>
+                    </a>
+                    <a href="#returns" style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); text-align: center; text-decoration: none; box-shadow: var(--shadow); transition: all 0.3s;">
+                        <div style="font-size: 48px; margin-bottom: var(--space-3);">&#128721;</div>
+                        <h3 style="color: var(--primary);">Returns</h3>
+                        <p style="color: var(--gray-600); font-size: var(--text-sm);">Returns and refunds</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Orders Section -->
+            <section id="orders" style="margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 2px solid var(--primary);">Orders</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--primary);">How do I place an order?</h4>
+                        <p style="color: var(--gray-600);">Browse through our catalog, select products, add them to your cart, and proceed to checkout. Choose your delivery address and payment method to complete your order.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--primary);">Can I modify or cancel my order?</h4>
+                        <p style="color: var(--gray-600);">If your order hasn't been processed yet, you can modify or cancel it from your account. Contact our support team for assistance.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--primary);">Is there a minimum order value?</h4>
+                        <p style="color: var(--gray-600);">Most items have no minimum order value. However, some sellers may have minimum purchase requirements displayed on their product pages.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--primary);">Do you offer bulk orders?</h4>
+                        <p style="color: var(--gray-600);">Yes, we offer bulk discounts for large orders. Please contact our B2B team at business@dadarshop.com for more information.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shipping Section -->
+            <section id="shipping" style="margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 2px solid var(--secondary);">Shipping & Delivery</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--secondary);">How long does delivery take?</h4>
+                        <p style="color: var(--gray-600);">Standard delivery takes 3-5 business days. Express delivery is available for 1-2 day delivery. Delivery times vary by location.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--secondary);">What are the shipping charges?</h4>
+                        <p style="color: var(--gray-600);">Free shipping on orders over $50. Standard shipping is $5, express shipping is $10. Some items qualify for free shipping regardless of order value.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--secondary);">How do I track my order?</h4>
+                        <p style="color: var(--gray-600);">You can track your order using the tracking number provided in your order confirmation email. Visit our Track Order page for real-time updates.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--secondary);">Do you deliver internationally?</h4>
+                        <p style="color: var(--gray-600);">We currently deliver to 8 countries in South and Southeast Asia. Check our shipping policy page for a complete list of delivery destinations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Payment Section -->
+            <section id="payment" style="margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 2px solid var(--accent);">Payment</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--accent);">What payment methods do you accept?</h4>
+                        <p style="color: var(--gray-600);">We accept credit cards, debit cards, mobile wallets (bKash, Nagad), bank transfers, and cash on delivery (COD).</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--accent);">Is my payment information secure?</h4>
+                        <p style="color: var(--gray-600);">Yes, we use SSL encryption and PCI DSS compliance to protect your payment information. Your data is safe with us.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--accent);">Can I save my payment method?</h4>
+                        <p style="color: var(--gray-600);">Yes, you can save multiple payment methods in your account for faster checkout on future purchases.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--accent);">Do you offer installment plans?</h4>
+                        <p style="color: var(--gray-600);">Yes, select credit cards offer installment payment options for eligible purchases over $200. Check at checkout for available options.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Returns Section -->
+            <section id="returns" style="margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 2px solid var(--primary);">Returns & Refunds</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--primary);">What is your return policy?</h4>
+                        <p style="color: var(--gray-600);">We offer a 30-day return policy for most items. Products must be unused and in original packaging with all accessories included.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--primary);">How do I initiate a return?</h4>
+                        <p style="color: var(--gray-600);">Log into your account, go to My Orders, select the item to return, and submit a return request. Follow the instructions to arrange a pickup.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--primary);">When will I get my refund?</h4>
+                        <p style="color: var(--gray-600);">Refunds are processed within 5-7 business days after we receive and verify the returned item.</p>
+                    </div>
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: var(--space-3); color: var(--primary);">What about damaged items?</h4>
+                        <p style="color: var(--gray-600);">If you receive a damaged or defective item, contact us immediately with photos. We'll arrange a replacement or full refund.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Topics -->
+            <section style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-10); box-shadow: var(--shadow); margin-bottom: var(--space-10);">
+                <h2 style="margin-bottom: var(--space-8);">Popular Topics</h2>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6);">
+                    <a href="#" style="padding: var(--space-4); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); text-decoration: none; color: var(--primary); font-weight: var(--font-semibold);">
+                        &#128308; How to use discount codes and coupons
+                    </a>
+                    <a href="#" style="padding: var(--space-4); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); text-decoration: none; color: var(--primary); font-weight: var(--font-semibold);">
+                        &#128310; Creating and managing your account
+                    </a>
+                    <a href="#" style="padding: var(--space-4); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); text-decoration: none; color: var(--primary); font-weight: var(--font-semibold);">
+                        &#10003; Wishlist and saved items
+                    </a>
+                    <a href="#" style="padding: var(--space-4); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); text-decoration: none; color: var(--primary); font-weight: var(--font-semibold);">
+                        &#128161; Product specifications and reviews
+                    </a>
+                    <a href="#" style="padding: var(--space-4); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); text-decoration: none; color: var(--primary); font-weight: var(--font-semibold);">
+                        &#128269; Searching and filtering products
+                    </a>
+                    <a href="#" style="padding: var(--space-4); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); text-decoration: none; color: var(--primary); font-weight: var(--font-semibold);">
+                        &#10002; Order history and receipts
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contact Support -->
+            <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); border-radius: var(--radius-xl); padding: var(--space-10); text-align: center; color: var(--white); margin-bottom: var(--space-10);">
+                <h2 style="color: var(--white); margin-bottom: var(--space-4);">Didn't find what you're looking for?</h2>
+                <p style="margin-bottom: var(--space-6); opacity: 0.9; font-size: var(--text-lg);">Our customer support team is ready to help you.</p>
+                <div style="display: flex; gap: var(--space-4); justify-content: center;">
+                    <a href="contact.html" class="btn btn-white">Contact Support</a>
+                    <a href="faq.html" class="btn btn-white" style="background: rgba(255,255,255,0.2); border: 2px solid white;">View FAQ</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="../../index.html" class="footer-logo">
+                        <div style="width: 40px; height: 40px; background: var(--primary); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: var(--font-bold);">DS</div>
+                        <h3>Dadar Shop</h3>
+                    </a>
+                    <p class="footer-desc">Your Trusted Online Marketplace. Shop millions of products from trusted sellers with fast delivery and secure payment options.</p>
+                    <div class="footer-social">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">in</a>
+                        <a href="#">yt</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="about-us.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="../blog/blog-listing.html">Blog</a>
+                        <a href="help-center.html">Help Center</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Customer Service</h4>
+                    <div class="footer-links">
+                        <a href="track-order.html">Track Order</a>
+                        <a href="../account/orders.html">My Orders</a>
+                        <a href="../account/wishlist.html">Wishlist</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="../auth/login.html">Seller Center</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Policies</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="return-policy.html">Return Policy</a>
+                        <a href="shipping-policy.html">Shipping Policy</a>
+                        <a href="warranty.html">Warranty</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <div class="footer-links">
+                        <a href="tel:+8801234567890">&#128222; +880 1234-567890</a>
+                        <a href="mailto:support@dadarshop.com">&#9993; support@dadarshop.com</a>
+                        <p style="color: var(--gray-400); margin-top: var(--space-4);">&#128205; 123 Shopping Street<br>Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Dadar Shop. All Rights Reserved.</p>
+                <div class="footer-payments">
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">Visa</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">Mastercard</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">bKash</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">Nagad</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">COD</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
