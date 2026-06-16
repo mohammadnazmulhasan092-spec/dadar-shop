@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dadar Shop - My Orders">
+    <meta name="keywords" content="Dadar Shop, orders, track, order history">
+    <meta name="author" content="Dadar Shop">
+    <title>My Orders - Dadar Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .account-container {display:grid;grid-template-columns:250px 1fr;gap:var(--space-8);margin:var(--space-8) 0;}
+        .account-sidebar {background:var(--white);border-radius:var(--radius-xl);padding:var(--space-6);height:fit-content;box-shadow:var(--shadow);}
+        .account-sidebar-item {display:flex;align-items:center;gap:var(--space-3);padding:var(--space-4);margin-bottom:var(--space-2);border-radius:var(--radius-lg);color:var(--gray-700);text-decoration:none;transition:all var(--transition-fast);}
+        .account-sidebar-item:hover {background:var(--gray-100);color:var(--primary);}
+        .account-sidebar-item.active {background:var(--primary);color:var(--white);}
+        .account-main {background:var(--white);border-radius:var(--radius-xl);padding:var(--space-8);box-shadow:var(--shadow);}
+        .page-header {margin-bottom:var(--space-8);}
+        .page-header h1 {font-size:var(--text-3xl);color:var(--gray-900);margin-bottom:var(--space-2);}
+        .page-header p {color:var(--gray-600);}
+        .filter-tabs {display:flex;gap:var(--space-3);margin-bottom:var(--space-8);border-bottom:2px solid var(--gray-200);overflow-x:auto;}
+        .filter-tab {padding:var(--space-4);color:var(--gray-600);border:none;background:none;cursor:pointer;font-weight:var(--font-semibold);border-bottom:3px solid transparent;transition:all var(--transition-fast);white-space:nowrap;}
+        .filter-tab:hover {color:var(--primary);}
+        .filter-tab.active {color:var(--primary);border-bottom-color:var(--primary);}
+        .order-card {border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:var(--space-6);transition:box-shadow var(--transition-fast);margin-bottom:var(--space-6);}
+        .order-card:hover {box-shadow:var(--shadow-md);}
+        .order-header {display:grid;grid-template-columns:1fr auto;gap:var(--space-4);margin-bottom:var(--space-4);padding-bottom:var(--space-4);border-bottom:1px solid var(--gray-200);}
+        .order-header-left h3 {font-size:var(--text-lg);color:var(--gray-900);margin-bottom:var(--space-2);}
+        .order-header-info {display:flex;gap:var(--space-6);font-size:var(--text-sm);color:var(--gray-600);}
+        .order-header-right {display:flex;flex-direction:column;align-items:flex-end;gap:var(--space-2);}
+        .order-status-badge {display:inline-block;padding:var(--space-2) var(--space-4);border-radius:var(--radius-lg);font-size:var(--text-xs);font-weight:var(--font-semibold);}
+        .order-status-badge.delivered {background:#E8F5E9;color:#2E7D32;}
+        .order-status-badge.processing {background:#FFF3E0;color:#E65100;}
+        .order-status-badge.shipped {background:#E3F2FD;color:#0D47A1;}
+        .order-price {font-size:var(--text-xl);font-weight:var(--font-bold);color:var(--primary);}
+        .order-item {display:grid;grid-template-columns:80px 1fr auto;gap:var(--space-4);align-items:center;padding:var(--space-4);background:var(--gray-50);border-radius:var(--radius-lg);margin-bottom:var(--space-3);}
+        .order-item-image {width:80px;height:80px;background:var(--gray-200);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:var(--text-3xl);}
+        .order-item-info h4 {font-size:var(--text-base);color:var(--gray-900);margin-bottom:var(--space-1);}
+        .order-item-info p {font-size:var(--text-sm);color:var(--gray-500);}
+        .order-item-price {font-weight:var(--font-semibold);color:var(--gray-900);}
+        .order-actions {display:flex;gap:var(--space-3);padding-top:var(--space-4);border-top:1px solid var(--gray-200);}
+        .btn-secondary {display:inline-block;padding:var(--space-3) var(--space-6);background:var(--white);color:var(--primary);border:1px solid var(--primary);border-radius:var(--radius-lg);font-weight:var(--font-semibold);text-decoration:none;transition:all var(--transition-fast);}
+        .btn-secondary:hover {background:var(--primary);color:var(--white);}
+        @media (max-width:768px) {
+            .account-container {grid-template-columns:1fr;}
+            .account-sidebar {display:grid;grid-template-columns:repeat(2,1fr);padding:var(--space-4);gap:var(--space-2);}
+            .account-sidebar-item {margin-bottom:0;justify-content:center;}
+            .order-header {grid-template-columns:1fr;}
+            .order-header-right {align-items:flex-start;}
+            .order-item {grid-template-columns:60px 1fr;gap:var(--space-3);}
+            .order-item-image {width:60px;height:60px;}
+            .order-item-price {grid-column:2;}
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar"><div class="container"><div class="top-bar-content"><div class="top-bar-left"><span>Welcome to Dadar Shop!</span><span class="top-bar-divider"></span><span>Hotline: +880 1234-567890</span></div><div class="top-bar-right"><a href="../support/track-order.html">Track Order</a><span class="top-bar-divider"></span><a href="../support/help-center.html">Help Center</a></div></div></div></div>
+    <header class="header"><div class="container"><div class="header-main"><a href="../../index.html" class="logo"><div class="logo-icon">DS</div><div class="logo-text"><div>Dadar <span>Shop</span></div><div class="logo-tagline">Your Trusted Online Marketplace</div></div></a><div class="search-wrapper"><form class="search-bar" action="../search/search-results.html" method="GET"><select class="search-category"><option value="all">All Categories</option></select><input type="text" class="search-input" placeholder="Search..." name="q"></form></div><div class="header-actions"><div class="header-action" onclick="window.location.href='dashboard.html'"><span class="header-action-icon">👤</span><span>Account</span></div><div class="header-action" onclick="window.location.href='wishlist.html'"><span class="header-action-icon">🤍</span><span>Wishlist</span><span class="header-badge">3</span></div><div class="header-action" onclick="window.location.href='../cart/cart.html'"><span class="header-action-icon">🛒</span><span>Cart</span><span class="header-badge">5</span></div></div></div></div><nav class="nav-wrapper"><div class="container"><ul class="nav"><li class="nav-item"><a href="../../categories/all-categories.html" class="nav-link"><span>≡</span>All Categories</a></li></ul></div></nav></header>
+    <main><div class="container"><div class="account-container"><aside class="account-sidebar"><div style="margin-bottom:var(--space-4);padding-bottom:var(--space-4);border-bottom:1px solid var(--gray-200);"><div style="width:60px;height:60px;background:var(--primary);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:var(--font-bold);font-size:var(--text-2xl);">JD</div><h3 style="margin-top:var(--space-3);color:var(--gray-900);">John Doe</h3></div><a href="dashboard.html" class="account-sidebar-item"><span>📊</span><span>Dashboard</span></a><a href="orders.html" class="account-sidebar-item active"><span>🛒</span><span>My Orders</span></a><a href="wishlist.html" class="account-sidebar-item"><span>🤍</span><span>Wishlist</span></a></aside><section class="account-main"><div class="page-header"><h1>My Orders</h1><p>View and manage all your orders here.</p></div><div class="filter-tabs"><button class="filter-tab active" onclick="filterOrders('all')">All Orders</button><button class="filter-tab" onclick="filterOrders('pending')">Pending</button><button class="filter-tab" onclick="filterOrders('processing')">Processing</button><button class="filter-tab" onclick="filterOrders('shipped')">Shipped</button><button class="filter-tab" onclick="filterOrders('delivered')">Delivered</button></div><div class="order-card"><div class="order-header"><div class="order-header-left"><h3>Order #DS12345</h3><div class="order-header-info"><span>Placed on June 15, 2026</span><span>3 items</span></div></div><div class="order-header-right"><span class="order-status-badge delivered">Delivered</span><span class="order-price">$169.97</span></div></div><div style="margin-bottom:var(--space-4);"><div class="order-item"><div class="order-item-image">📱</div><div class="order-item-info"><h4>Wireless Bluetooth Earbuds Pro</h4><p>Qty: 1 | Color: Black</p></div><div class="order-item-price">$59.99</div></div><div class="order-item"><div class="order-item-image">👕</div><div class="order-item-info"><h4>Summer Floral Dress</h4><p>Qty: 1 | Size: M</p></div><div class="order-item-price">$49.99</div></div><div class="order-item"><div class="order-item-image">🏠</div><div class="order-item-info"><h4>Modern LED Table Lamp</h4><p>Qty: 1 | Color: White</p></div><div class="order-item-price">$59.99</div></div></div><div class="order-actions"><a href="../support/track-order.html" class="btn-secondary">Track Order</a><a href="#" class="btn-secondary">Return Items</a></div></div><div class="order-card"><div class="order-header"><div class="order-header-left"><h3>Order #DS12344</h3><div class="order-header-info"><span>Placed on June 10, 2026</span><span>2 items</span></div></div><div class="order-header-right"><span class="order-status-badge processing">Processing</span><span class="order-price">$199.98</span></div></div><div style="margin-bottom:var(--space-4);"><div class="order-item"><div class="order-item-image">📱</div><div class="order-item-info"><h4>Smart Watch Series X</h4><p>Qty: 1 | Color: Silver</p></div><div class="order-item-price">$129.99</div></div></div><div class="order-actions"><a href="../support/track-order.html" class="btn-secondary">Track Order</a></div></div></section></div></div></main>
+    <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2026 Dadar Shop.</p></div></div></footer>
+    <nav class="mobile-nav"><div class="mobile-nav-items"><a href="../../index.html" class="mobile-nav-item"><span>🏠</span><span>Home</span></a><a href="../cart/cart.html" class="mobile-nav-item"><span>🛒</span><span>Cart</span></a><a href="dashboard.html" class="mobile-nav-item"><span>👤</span><span>Account</span></a></div></nav>
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        function filterOrders(status) {
+            document.querySelectorAll('.filter-tab').forEach(tab => tab.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

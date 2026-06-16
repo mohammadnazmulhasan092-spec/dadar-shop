@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create a new Dadar Shop account. Join our trusted online marketplace for great deals on electronics, fashion, and more.">
+    <meta name="keywords" content="Dadar Shop register, create account, sign up, customer registration">
+    <meta name="author" content="Dadar Shop">
+    <title>Register - Dadar Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        /* Auth Page Specific Styles */
+        .auth-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8A5C 100%);
+        }
+        .auth-header {
+            padding: var(--space-6);
+            text-align: center;
+            color: var(--white);
+        }
+        .auth-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-4);
+            margin-bottom: var(--space-4);
+            text-decoration: none;
+            color: var(--white);
+        }
+        .auth-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: var(--font-bold);
+            font-size: var(--text-xl);
+            color: var(--primary);
+        }
+        .auth-logo-text h1 {
+            font-size: var(--text-2xl);
+            font-weight: var(--font-bold);
+            margin: 0;
+            line-height: 1.2;
+        }
+        .auth-logo-text .tagline {
+            font-size: var(--text-sm);
+            opacity: 0.95;
+            font-weight: var(--font-normal);
+        }
+        .auth-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-6);
+        }
+        .auth-card {
+            background: var(--white);
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-xl);
+            width: 100%;
+            max-width: 480px;
+            padding: var(--space-10);
+        }
+        .auth-card h2 {
+            font-size: var(--text-2xl);
+            font-weight: var(--font-bold);
+            color: var(--secondary-dark);
+            margin-bottom: var(--space-2);
+        }
+        .auth-card .subtitle {
+            font-size: var(--text-sm);
+            color: var(--gray-600);
+            margin-bottom: var(--space-8);
+        }
+        .form-group {
+            margin-bottom: var(--space-6);
+        }
+        .form-group label {
+            display: block;
+            font-size: var(--text-sm);
+            font-weight: var(--font-medium);
+            color: var(--secondary-dark);
+            margin-bottom: var(--space-2);
+        }
+        .form-group input[type="email"],
+        .form-group input[type="password"],
+        .form-group input[type="text"],
+        .form-group input[type="tel"] {
+            width: 100%;
+            padding: var(--space-4) var(--space-4);
+            border: 1px solid var(--gray-300);
+            border-radius: var(--radius-lg);
+            font-size: var(--text-base);
+            transition: all var(--transition-fast);
+            background: var(--white);
+            color: var(--gray-900);
+        }
+        .form-group input[type="email"]:focus,
+        .form-group input[type="password"]:focus,
+        .form-group input[type="text"]:focus,
+        .form-group input[type="tel"]:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+        .form-group input::placeholder {
+            color: var(--gray-500);
+        }
+        .form-group .password-strength {
+            font-size: var(--text-xs);
+            margin-top: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            border-radius: var(--radius-md);
+            display: none;
+        }
+        .form-group .password-strength.weak {
+            background: rgba(231, 76, 60, 0.1);
+            color: var(--error);
+            display: block;
+        }
+        .form-group .password-strength.medium {
+            background: rgba(243, 156, 18, 0.1);
+            color: var(--warning);
+            display: block;
+        }
+        .form-group .password-strength.strong {
+            background: rgba(39, 174, 96, 0.1);
+            color: var(--success);
+            display: block;
+        }
+        .terms-wrapper {
+            display: flex;
+            gap: var(--space-3);
+            margin-bottom: var(--space-6);
+            padding: var(--space-4);
+            background: var(--gray-50);
+            border-radius: var(--radius-lg);
+            align-items: flex-start;
+        }
+        .terms-wrapper input[type="checkbox"] {
+            margin-top: var(--space-1);
+            accent-color: var(--primary);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .terms-text {
+            font-size: var(--text-sm);
+            color: var(--gray-700);
+            line-height: 1.4;
+        }
+        .terms-text a {
+            color: var(--primary);
+            font-weight: var(--font-medium);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        .terms-text a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+        .btn {
+            width: 100%;
+            padding: var(--space-4) var(--space-6);
+            border: none;
+            border-radius: var(--radius-lg);
+            font-size: var(--text-base);
+            font-weight: var(--font-semibold);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            margin-bottom: var(--space-6);
+        }
+        .btn-primary:hover:not(:disabled) {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        .btn-primary:active:not(:disabled) {
+            transform: translateY(0);
+        }
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .auth-footer {
+            text-align: center;
+            font-size: var(--text-sm);
+            color: var(--gray-700);
+        }
+        .auth-footer a {
+            color: var(--primary);
+            font-weight: var(--font-semibold);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        .auth-footer a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+        @media (max-width: 480px) {
+            .auth-card {
+                padding: var(--space-6);
+            }
+            .auth-content {
+                padding: var(--space-4);
+            }
+            .auth-card h2 {
+                font-size: var(--text-xl);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-header">
+            <a href="../../index.html" class="auth-logo">
+                <div class="auth-logo-icon">DS</div>
+                <div class="auth-logo-text">
+                    <h1>Dadar Shop</h1>
+                    <div class="tagline">Your Trusted Online Marketplace</div>
+                </div>
+            </a>
+        </div>
+        <div class="auth-content">
+            <div class="auth-card">
+                <h2>Create Account</h2>
+                <p class="subtitle">Join Dadar Shop and start shopping</p>
+                <form id="registerForm" onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+880 1234-567890" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Create a strong password" required onchange="checkPasswordStrength()" oninput="checkPasswordStrength()">
+                        <div id="strengthIndicator" class="password-strength"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+                    </div>
+                    <div class="terms-wrapper">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms" class="terms-text">
+                            I agree to the <a href="../../pages/support/terms.html" target="_blank">Terms & Conditions</a> and <a href="../../pages/support/privacy.html" target="_blank">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        Create Account
+                    </button>
+                </form>
+                <div class="auth-footer">
+                    Already have an account? <a href="login.html">Sign in here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        function checkPasswordStrength() {
+            const password = document.getElementById('password').value;
+            const indicator = document.getElementById('strengthIndicator');
+            if (!password) {
+                indicator.classList.remove('weak', 'medium', 'strong');
+                return;
+            }
+            let strength = 0;
+            if (password.length >= 8) strength++;
+            if (password.length >= 12) strength++;
+            if (/[a-z]/.test(password)) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[^a-zA-Z0-9]/.test(password)) strength++;
+            indicator.classList.remove('weak', 'medium', 'strong');
+            if (strength < 3) {
+                indicator.classList.add('weak');
+                indicator.textContent = 'Weak password - add numbers, uppercase, and symbols';
+            } else if (strength < 5) {
+                indicator.classList.add('medium');
+                indicator.textContent = 'Medium password - consider making it longer';
+            } else {
+                indicator.classList.add('strong');
+                indicator.textContent = 'Strong password - good job!';
+            }
+        }
+        function handleRegister(event) {
+            event.preventDefault();
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const terms = document.getElementById('terms').checked;
+            if (!fullName.trim()) {
+                alert('Please enter your full name');
+                return;
+            }
+            if (!email.includes('@')) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long');
+                return;
+            }
+            if (password !== confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
+            if (!terms) {
+                alert('Please accept the Terms & Conditions');
+                return;
+            }
+            const registrationData = {
+                fullName: fullName,
+                email: email,
+                phone: phone,
+                registeredAt: new Date().toISOString()
+            };
+            localStorage.setItem('userRegistration', JSON.stringify(registrationData));
+            alert('Account created successfully! Redirecting to login...');
+            window.location.href = 'login.html';
+        }
+        document.getElementById('terms').addEventListener('change', function() {
+            document.getElementById('submitBtn').disabled = !this.checked;
+        });
+        document.getElementById('submitBtn').disabled = true;
+    </script>
+</body>
+</html>
