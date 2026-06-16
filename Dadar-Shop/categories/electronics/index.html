@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop Electronics at Dadar Shop">
+    <title>Electronics - Dadar Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <div class="top-bar"><div class="container"><div class="top-bar-content"><div class="top-bar-left"><span>Welcome to Dadar Shop!</span></div></div></div></div>
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <a href="../../index.html" class="logo"><div class="logo-icon">DS</div><div class="logo-text"><div>Dadar <span>Shop</span></div></div></a>
+                <div class="search-wrapper"><form class="search-bar"><input type="text" class="search-input" placeholder="Search Electronics..."><button class="search-btn">&#128269;</button></form></div>
+                <div class="header-actions">
+                    <div class="header-action" onclick="location.href='../../pages/auth/login.html'"><span>&#128100;</span><span>Account</span></div>
+                    <div class="header-action" onclick="location.href='../../pages/cart/cart.html'"><span>&#128722;</span><span>Cart</span><span class="header-badge">5</span></div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-wrapper"><div class="container"><ul class="nav"><li><a href="../all-categories.html" class="nav-link">&#9776; All Categories</a></li><li><a href="index.html" class="nav-link" style="background:var(--primary);">Electronics</a></li><li><a href="../fashion/index.html" class="nav-link">Fashion</a></li><li><a href="../beauty/index.html" class="nav-link">Beauty</a></li><li><a href="../home-living/index.html" class="nav-link">Home & Living</a></li></ul></div></nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="breadcrumb"><a href="../../index.html">Home</a><span class="breadcrumb-separator">/</span><a href="../all-categories.html">Categories</a><span class="breadcrumb-separator">/</span><span>Electronics</span></div>
+            <div class="category-banner"><div class="category-banner-bg" style="background-image:url('https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1260');"></div><div class="category-banner-overlay"></div><div class="category-banner-content"><h1 class="category-banner-title">Electronics</h1><p style="opacity:0.9;">Discover the latest gadgets at unbeatable prices.</p></div></div>
+            <div class="subcategory-nav"><a href="index.html" class="subcategory-item active">All</a><a href="#" class="subcategory-item">Mobiles</a><a href="#" class="subcategory-item">Laptops</a><a href="#" class="subcategory-item">Tablets</a><a href="#" class="subcategory-item">Smart Watches</a><a href="#" class="subcategory-item">Headphones</a><a href="#" class="subcategory-item">Cameras</a></div>
+            <div class="product-listing">
+                <aside class="filters-sidebar">
+                    <div class="filter-group"><h4 class="filter-title">Price Range</h4><div style="display:flex;gap:var(--space-2);"><input type="text" class="price-input" placeholder="$Min"><input type="text" class="price-input" placeholder="$Max"></div></div>
+                    <div class="filter-group"><h4 class="filter-title">Brand</h4><div class="filter-options"><label class="filter-option">&#9744; Apple</label><label class="filter-option">&#9744; Samsung</label><label class="filter-option">&#9744; Sony</label><label class="filter-option">&#9744; LG</label></div></div>
+                    <div class="filter-group"><h4 class="filter-title">Rating</h4><div class="filter-options"><label class="filter-option">&#9744; 4+ Stars</label><label class="filter-option">&#9744; 3+ Stars</label></div></div>
+                </aside>
+                <div>
+                    <div class="toolbar"><div><span>Showing 1-20 of 2,500+ products</span></div><select class="sort-select"><option>Sort: Relevance</option><option>Price: Low to High</option><option>Price: High to Low</option></select></div>
+                    <div class="product-grid product-grid-4">
+                        <a href="../../products/product-detail.html" class="product-card"><div class="product-card-image"><img src="https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Phone"><div class="product-card-badges"><span class="badge badge-hot">Hot</span></div></div><div class="product-card-content"><span class="product-card-category">Mobiles</span><h3 class="product-card-title">Flagship Smartphone Pro Max</h3><div class="product-card-rating"><div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="rating-count">(456)</span></div><div class="product-card-price"><span class="price-current">$1,199.99</span></div></div></a>
+                        <a href="../../products/product-detail.html" class="product-card"><div class="product-card-image"><img src="https://images.pexels.com/photos/18105-6db451a5d0c5c5d6f5df_pexels-photo.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Laptop"><div class="product-card-badges"><span class="badge badge-new">New</span></div></div><div class="product-card-content"><span class="product-card-category">Laptops</span><h3 class="product-card-title">UltraSlim Pro Laptop</h3><div class="product-card-rating"><div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="rating-count">(89)</span></div><div class="product-card-price"><span class="price-current">$1,299.99</span><span class="price-original">$1,499.99</span></div></div></a>
+                        <a href="../../products/product-detail.html" class="product-card"><div class="product-card-image"><img src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tablet"><div class="product-card-badges"><span class="badge badge-sale">-15%</span></div></div><div class="product-card-content"><span class="product-card-category">Tablets</span><h3 class="product-card-title">Pro Tablet 12.9"</h3><div class="product-card-rating"><div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><span class="rating-count">(234)</span></div><div class="product-card-price"><span class="price-current">$949.99</span><span class="price-original">$1,099.99</span></div></div></a>
+                        <a href="../../products/product-detail.html" class="product-card"><div class="product-card-image"><img src="https://images.pexels.com/photos/2783849/pexels-photo-2783849.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Watch"><div class="product-card-badges"><span class="badge badge-sale">-20%</span></div></div><div class="product-card-content"><span class="product-card-category">Smart Watches</span><h3 class="product-card-title">Smart Watch Series X</h3><div class="product-card-rating"><div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="rating-count">(428)</span></div><div class="product-card-price"><span class="price-current">$399.99</span><span class="price-original">$499.99</span></div></div></a>
+                        <a href="../../products/product-detail.html" class="product-card"><div class="product-card-image"><img src="https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Headphones"><div class="product-card-badges"><span class="badge badge-hot">Hot</span></div></div><div class="product-card-content"><span class="product-card-category">Headphones</span><h3 class="product-card-title">Noise Cancelling Headphones</h3><div class="product-card-rating"><div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><span class="rating-count">(234)</span></div><div class="product-card-price"><span class="price-current">$249.99</span></div></div></a>
+                        <a href="../../products/product-detail.html" class="product-card"><div class="product-card-image"><img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Earbuds"><div class="product-card-badges"><span class="badge badge-sale">-40%</span></div></div><div class="product-card-content"><span class="product-card-category">Headphones</span><h3 class="product-card-title">Wireless Earbuds Pro</h3><div class="product-card-rating"><div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><span class="rating-count">(567)</span></div><div class="product-card-price"><span class="price-current">$149.99</span><span class="price-original">$249.99</span></div></div></a>
+                    </div>
+                    <div class="pagination"><span class="pagination-item">&#8592;</span><span class="pagination-item active">1</span><span class="pagination-item">2</span><span class="pagination-item">3</span><span class="pagination-item">...</span><span class="pagination-item">125</span><span class="pagination-item">&#8594;</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a href="../../index.html" class="footer-logo"><div style="width:40px;height:40px;background:var(--primary);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;color:var(--white);">DS</div><h3>Dadar Shop</h3></a></div><div><h4 class="footer-title">Quick Links</h4><div class="footer-links"><a href="../../pages/support/about-us.html">About</a><a href="../../pages/support/contact.html">Contact</a></div></div><div><h4 class="footer-title">Support</h4><div class="footer-links"><a href="../../pages/support/track-order.html">Track Order</a></div></div><div><h4 class="footer-title">Policies</h4><div class="footer-links"><a href="../../pages/support/privacy-policy.html">Privacy</a></div></div></div><div class="footer-bottom"><p class="footer-copyright">&copy; 2026 Dadar Shop.</p></div></div></footer>
+</body>
+</html>
