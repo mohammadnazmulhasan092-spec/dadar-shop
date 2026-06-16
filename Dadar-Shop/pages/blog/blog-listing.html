@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dadar Shop Blog - Tips, Trends, and Shopping Guides. Discover articles about electronics, fashion, beauty, and lifestyle products.">
+    <meta name="keywords" content="blog, shopping tips, product guides, trends, lifestyle, Dadar Shop">
+    <meta name="author" content="Dadar Shop">
+    <meta property="og:title" content="Dadar Shop Blog - Shopping Tips & Trends">
+    <meta property="og:description" content="Discover expert shopping tips, product guides, and lifestyle trends on Dadar Shop Blog.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dadarshop.com/pages/blog/blog-listing.html">
+    <title>Dadar Shop Blog - Shopping Tips & Trends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span>Welcome to Dadar Shop!</span>
+                    <span class="top-bar-divider"></span>
+                    <span>Hotline: +880 1234-567890</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="../support/track-order.html">Track Order</a>
+                    <span class="top-bar-divider"></span>
+                    <a href="../support/help-center.html">Help Center</a>
+                    <span class="top-bar-divider"></span>
+                    <a href="../auth/login.html">Sell on Dadar Shop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <!-- Logo -->
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">DS</div>
+                    <div class="logo-text">
+                        <div>Dadar <span>Shop</span></div>
+                        <div class="logo-tagline">Your Trusted Online Marketplace</div>
+                    </div>
+                </a>
+
+                <!-- Search Bar -->
+                <div class="search-wrapper">
+                    <form class="search-bar" action="../search/search-results.html" method="GET">
+                        <select class="search-category">
+                            <option value="all">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="beauty">Beauty</option>
+                            <option value="home-living">Home & Living</option>
+                            <option value="groceries">Groceries</option>
+                            <option value="books">Books</option>
+                            <option value="sports">Sports</option>
+                            <option value="toys">Toys</option>
+                        </select>
+                        <input type="text" class="search-input" placeholder="Search for products, brands and more..." name="q">
+                        <button type="submit" class="search-btn">&#128269; Search</button>
+                    </form>
+                </div>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <!-- Account -->
+                    <div class="header-action" onclick="window.location.href='../auth/login.html'">
+                        <span class="header-action-icon">&#128100;</span>
+                        <span class="header-action-text">Account</span>
+                    </div>
+
+                    <!-- Wishlist -->
+                    <div class="header-action" onclick="window.location.href='../account/wishlist.html'">
+                        <span class="header-action-icon">&#9825;</span>
+                        <span class="header-action-text">Wishlist</span>
+                        <span class="header-badge" id="wishlist-count">3</span>
+                    </div>
+
+                    <!-- Cart -->
+                    <div class="header-action cart-preview" onclick="window.location.href='../cart/cart.html'">
+                        <span class="header-action-icon">&#128722;</span>
+                        <span class="header-action-text">Cart</span>
+                        <span class="header-badge" id="cart-count">5</span>
+
+                        <!-- Mini Cart Dropdown -->
+                        <div class="cart-dropdown">
+                            <div class="cart-item" style="padding: var(--space-3) 0;">
+                                <div style="display: flex; gap: var(--space-3);">
+                                    <div style="width: 50px; height: 50px; background: var(--gray-100); border-radius: var(--radius-md);"></div>
+                                    <div style="flex: 1;">
+                                        <div style="font-size: var(--text-sm); font-weight: var(--font-medium);">Product Name</div>
+                                        <div style="font-size: var(--text-xs); color: var(--gray-500);">Qty: 1</div>
+                                    </div>
+                                    <div style="font-weight: var(--font-semibold); color: var(--primary);">$99.00</div>
+                                </div>
+                            </div>
+                            <div style="border-top: 1px solid var(--gray-200); padding-top: var(--space-3); margin-top: var(--space-2);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-3);">
+                                    <span>Subtotal:</span>
+                                    <strong>$299.00</strong>
+                                </div>
+                                <a href="../cart/cart.html" class="btn btn-primary btn-sm" style="width: 100%;">View Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav-wrapper">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="../../categories/all-categories.html" class="nav-link">
+                            <span class="nav-link-icon">&#9776;</span>
+                            All Categories
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../categories/electronics/index.html" class="nav-link">Electronics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../categories/fashion/index.html" class="nav-link">Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../categories/beauty/index.html" class="nav-link">Beauty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../categories/home-living/index.html" class="nav-link">Home & Living</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog-listing.html" class="nav-link" style="background: var(--primary); color: white;">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="margin: var(--space-8) 0;">
+        <div class="container">
+            <!-- Page Header -->
+            <section style="text-align: center; margin-bottom: var(--space-10);">
+                <h1 style="font-size: var(--text-4xl); font-weight: var(--font-bold); margin-bottom: var(--space-3); color: var(--gray-900);">Dadar Shop Blog</h1>
+                <p style="font-size: var(--text-lg); color: var(--gray-600); max-width: 600px; margin: 0 auto;">Discover tips, trends, and guides to help you shop smarter and live better.</p>
+            </section>
+
+            <div style="display: grid; grid-template-columns: 1fr 280px; gap: var(--space-8);">
+                <!-- Main Content -->
+                <div>
+                    <!-- Featured Post -->
+                    <article style="background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow); margin-bottom: var(--space-10);">
+                        <div style="position: relative; height: 400px; overflow: hidden;">
+                            <img src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Featured Post" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div style="position: absolute; top: var(--space-4); left: var(--space-4);">
+                                <span style="background: var(--primary); color: white; padding: var(--space-2) var(--space-3); border-radius: var(--radius-md); font-size: var(--text-xs); font-weight: var(--font-semibold);">FEATURED</span>
+                            </div>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div style="display: flex; gap: var(--space-4); margin-bottom: var(--space-4); color: var(--gray-500); font-size: var(--text-sm);">
+                                <span>By Sarah Williams</span>
+                                <span>&#183;</span>
+                                <span>June 15, 2026</span>
+                                <span>&#183;</span>
+                                <span>5 min read</span>
+                            </div>
+                            <h2 style="font-size: var(--text-3xl); font-weight: var(--font-bold); margin-bottom: var(--space-4); color: var(--gray-900);">The Ultimate Guide to Finding the Best Tech Deals</h2>
+                            <p style="color: var(--gray-600); line-height: 1.6; margin-bottom: var(--space-6);">Tired of overpaying for gadgets? Our comprehensive guide reveals insider tips and strategies to find the best tech deals throughout the year. Learn how to use flash sales, seasonal discounts, and cashback offers to maximize your savings on electronics.</p>
+                            <a href="blog-detail.html" class="btn btn-primary" style="display: inline-block;">Read More &#8594;</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Grid -->
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); margin-bottom: var(--space-10);">
+                        <!-- Blog Card 1 -->
+                        <article style="background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow); transition: transform 0.3s ease;">
+                            <div style="height: 200px; overflow: hidden; background: var(--gray-100);">
+                                <img src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Blog Post" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div style="padding: var(--space-5);">
+                                <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-3);">
+                                    <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-2); border-radius: var(--radius-md); font-size: var(--text-xs); font-weight: var(--font-semibold);">Fashion</span>
+                                    <span style="color: var(--gray-500); font-size: var(--text-xs);">June 12, 2026</span>
+                                </div>
+                                <h3 style="font-size: var(--text-lg); font-weight: var(--font-bold); margin-bottom: var(--space-3); color: var(--gray-900);">Summer Fashion Trends You Need to Know</h3>
+                                <p style="color: var(--gray-600); font-size: var(--text-sm); line-height: 1.5; margin-bottom: var(--space-4);">Explore the hottest summer fashion trends and how to incorporate them into your wardrobe without breaking the bank.</p>
+                                <a href="blog-detail.html" style="color: var(--primary); font-weight: var(--font-semibold); text-decoration: none;">Read More &#8594;</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Card 2 -->
+                        <article style="background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow); transition: transform 0.3s ease;">
+                            <div style="height: 200px; overflow: hidden; background: var(--gray-100);">
+                                <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Blog Post" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div style="padding: var(--space-5);">
+                                <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-3);">
+                                    <span style="background: var(--accent); color: white; padding: var(--space-1) var(--space-2); border-radius: var(--radius-md); font-size: var(--text-xs); font-weight: var(--font-semibold);">Beauty</span>
+                                    <span style="color: var(--gray-500); font-size: var(--text-xs);">June 10, 2026</span>
+                                </div>
+                                <h3 style="font-size: var(--text-lg); font-weight: var(--font-bold); margin-bottom: var(--space-3); color: var(--gray-900);">5 Skincare Products That Changed My Life</h3>
+                                <p style="color: var(--gray-600); font-size: var(--text-sm); line-height: 1.5; margin-bottom: var(--space-4);">Discover the top beauty products our editors are obsessed with and why they deserve a spot in your skincare routine.</p>
+                                <a href="blog-detail.html" style="color: var(--primary); font-weight: var(--font-semibold); text-decoration: none;">Read More &#8594;</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Card 3 -->
+                        <article style="background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow); transition: transform 0.3s ease;">
+                            <div style="height: 200px; overflow: hidden; background: var(--gray-100);">
+                                <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Blog Post" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div style="padding: var(--space-5);">
+                                <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-3);">
+                                    <span style="background: var(--primary); color: white; padding: var(--space-1) var(--space-2); border-radius: var(--radius-md); font-size: var(--text-xs); font-weight: var(--font-semibold);">Electronics</span>
+                                    <span style="color: var(--gray-500); font-size: var(--text-xs);">June 8, 2026</span>
+                                </div>
+                                <h3 style="font-size: var(--text-lg); font-weight: var(--font-bold); margin-bottom: var(--space-3); color: var(--gray-900);">Best Budget Smartphones Under $300</h3>
+                                <p style="color: var(--gray-600); font-size: var(--text-sm); line-height: 1.5; margin-bottom: var(--space-4);">Compare the best affordable smartphones that don't compromise on performance and features.</p>
+                                <a href="blog-detail.html" style="color: var(--primary); font-weight: var(--font-semibold); text-decoration: none;">Read More &#8594;</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Card 4 -->
+                        <article style="background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow); transition: transform 0.3s ease;">
+                            <div style="height: 200px; overflow: hidden; background: var(--gray-100);">
+                                <img src="https://images.pexels.com/photos/1546721/pexels-photo-1546721.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Blog Post" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div style="padding: var(--space-5);">
+                                <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-3);">
+                                    <span style="background: #F59E0B; color: white; padding: var(--space-1) var(--space-2); border-radius: var(--radius-md); font-size: var(--text-xs); font-weight: var(--font-semibold);">Home</span>
+                                    <span style="color: var(--gray-500); font-size: var(--text-xs);">June 5, 2026</span>
+                                </div>
+                                <h3 style="font-size: var(--text-lg); font-weight: var(--font-bold); margin-bottom: var(--space-3); color: var(--gray-900);">Home Organization Ideas on a Budget</h3>
+                                <p style="color: var(--gray-600); font-size: var(--text-sm); line-height: 1.5; margin-bottom: var(--space-4);">Transform your living space with these affordable organization solutions that maximize storage and style.</p>
+                                <a href="blog-detail.html" style="color: var(--primary); font-weight: var(--font-semibold); text-decoration: none;">Read More &#8594;</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Card 5 -->
+                        <article style="background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow); transition: transform 0.3s ease;">
+                            <div style="height: 200px; overflow: hidden; background: var(--gray-100);">
+                                <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Blog Post" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div style="padding: var(--space-5);">
+                                <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-3);">
+                                    <span style="background: #10B981; color: white; padding: var(--space-1) var(--space-2); border-radius: var(--radius-md); font-size: var(--text-xs); font-weight: var(--font-semibold);">Lifestyle</span>
+                                    <span style="color: var(--gray-500); font-size: var(--text-xs);">June 1, 2026</span>
+                                </div>
+                                <h3 style="font-size: var(--text-lg); font-weight: var(--font-bold); margin-bottom: var(--space-3); color: var(--gray-900);">Sustainable Shopping: Make a Difference</h3>
+                                <p style="color: var(--gray-600); font-size: var(--text-sm); line-height: 1.5; margin-bottom: var(--space-4);">Learn how to shop responsibly and make eco-friendly choices without sacrificing quality or affordability.</p>
+                                <a href="blog-detail.html" style="color: var(--primary); font-weight: var(--font-semibold); text-decoration: none;">Read More &#8594;</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Card 6 -->
+                        <article style="background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow); transition: transform 0.3s ease;">
+                            <div style="height: 200px; overflow: hidden; background: var(--gray-100);">
+                                <img src="https://images.pexels.com/photos/1346951/pexels-photo-1346951.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Blog Post" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div style="padding: var(--space-5);">
+                                <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-3);">
+                                    <span style="background: #EF4444; color: white; padding: var(--space-1) var(--space-2); border-radius: var(--radius-md); font-size: var(--text-xs); font-weight: var(--font-semibold);">Shopping</span>
+                                    <span style="color: var(--gray-500); font-size: var(--text-xs);">May 28, 2026</span>
+                                </div>
+                                <h3 style="font-size: var(--text-lg); font-weight: var(--font-bold); margin-bottom: var(--space-3); color: var(--gray-900);">How to Spot Counterfeit Products Online</h3>
+                                <p style="color: var(--gray-600); font-size: var(--text-sm); line-height: 1.5; margin-bottom: var(--space-4);">Protect yourself from fake products with our comprehensive guide to identifying authentic items.</p>
+                                <a href="blog-detail.html" style="color: var(--primary); font-weight: var(--font-semibold); text-decoration: none;">Read More &#8594;</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside>
+                    <!-- Category Filter -->
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow); margin-bottom: var(--space-6);">
+                        <h3 style="font-size: var(--text-lg); font-weight: var(--font-bold); margin-bottom: var(--space-4); color: var(--gray-900);">Categories</h3>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+                            <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer;">
+                                <input type="checkbox" checked style="width: 18px; height: 18px; cursor: pointer;">
+                                <span style="color: var(--gray-700); font-weight: var(--font-medium);">All Categories</span>
+                                <span style="color: var(--gray-400); margin-left: auto;">(28)</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer;">
+                                <input type="checkbox" style="width: 18px; height: 18px; cursor: pointer;">
+                                <span style="color: var(--gray-700);">Electronics</span>
+                                <span style="color: var(--gray-400); margin-left: auto;">(8)</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer;">
+                                <input type="checkbox" style="width: 18px; height: 18px; cursor: pointer;">
+                                <span style="color: var(--gray-700);">Fashion</span>
+                                <span style="color: var(--gray-400); margin-left: auto;">(6)</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer;">
+                                <input type="checkbox" style="width: 18px; height: 18px; cursor: pointer;">
+                                <span style="color: var(--gray-700);">Beauty</span>
+                                <span style="color: var(--gray-400); margin-left: auto;">(5)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Latest Posts -->
+                    <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow); margin-bottom: var(--space-6);">
+                        <h3 style="font-size: var(--text-lg); font-weight: var(--font-bold); margin-bottom: var(--space-4); color: var(--gray-900);">Latest Posts</h3>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+                            <a href="blog-detail.html" style="display: block; text-decoration: none; padding-bottom: var(--space-4); border-bottom: 1px solid var(--gray-200);">
+                                <div style="font-size: var(--text-xs); color: var(--gray-500); margin-bottom: var(--space-2);">June 15, 2026</div>
+                                <div style="font-weight: var(--font-semibold); color: var(--gray-900); line-height: 1.4;">The Ultimate Guide to Finding the Best Tech Deals</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); border-radius: var(--radius-xl); padding: var(--space-6); color: white;">
+                        <h3 style="font-size: var(--text-lg); font-weight: var(--font-bold); margin-bottom: var(--space-3);">Subscribe to Our Blog</h3>
+                        <p style="font-size: var(--text-sm); opacity: 0.9; margin-bottom: var(--space-4);">Get the latest shopping tips and lifestyle articles delivered to your inbox.</p>
+                        <form style="display: flex; flex-direction: column; gap: var(--space-2);">
+                            <input type="email" placeholder="Your email address" style="padding: var(--space-3); border: none; border-radius: var(--radius-lg); font-size: var(--text-sm); font-family: inherit;">
+                            <button type="submit" class="btn btn-white" style="width: 100%;">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="../../index.html" class="footer-logo">
+                        <div style="width: 40px; height: 40px; background: var(--primary); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: var(--font-bold);">DS</div>
+                        <h3>Dadar Shop</h3>
+                    </a>
+                    <p class="footer-desc">Your Trusted Online Marketplace. Shop millions of products from trusted sellers with fast delivery and secure payment options.</p>
+                    <div class="footer-social">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">in</a>
+                        <a href="#">yt</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="../support/about-us.html">About Us</a>
+                        <a href="../support/contact.html">Contact Us</a>
+                        <a href="blog-listing.html">Blog</a>
+                        <a href="../support/help-center.html">Help Center</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h4 class="footer-title">Customer Service</h4>
+                    <div class="footer-links">
+                        <a href="../support/track-order.html">Track Order</a>
+                        <a href="../account/orders.html">My Orders</a>
+                        <a href="../account/wishlist.html">Wishlist</a>
+                        <a href="../support/faq.html">FAQ</a>
+                        <a href="../auth/login.html">Seller Center</a>
+                    </div>
+                </div>
+
+                <!-- Policies -->
+                <div>
+                    <h4 class="footer-title">Policies</h4>
+                    <div class="footer-links">
+                        <a href="../support/privacy-policy.html">Privacy Policy</a>
+                        <a href="../support/terms.html">Terms of Service</a>
+                        <a href="../support/return-policy.html">Return Policy</a>
+                        <a href="../support/shipping-policy.html">Shipping Policy</a>
+                        <a href="../support/warranty.html">Warranty</a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <div class="footer-links">
+                        <a href="tel:+8801234567890">&#128222; +880 1234-567890</a>
+                        <a href="mailto:support@dadarshop.com">&#9993; support@dadarshop.com</a>
+                        <p style="color: var(--gray-400); margin-top: var(--space-4);">&#128205; 123 Shopping Street<br>Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Dadar Shop. All Rights Reserved.</p>
+                <div class="footer-payments">
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">Visa</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">Mastercard</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">bKash</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">Nagad</span>
+                    <span style="padding: var(--space-2) var(--space-3); background: var(--white); border-radius: var(--radius-md); color: var(--gray-700); font-size: var(--text-sm); font-weight: var(--font-medium);">COD</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-items">
+            <a href="../../index.html" class="mobile-nav-item">
+                <span class="mobile-nav-icon">&#127968;</span>
+                <span>Home</span>
+            </a>
+            <a href="../../categories/all-categories.html" class="mobile-nav-item">
+                <span class="mobile-nav-icon">&#9776;</span>
+                <span>Categories</span>
+            </a>
+            <a href="../cart/cart.html" class="mobile-nav-item">
+                <span class="mobile-nav-icon">&#128722;</span>
+                <span>Cart</span>
+            </a>
+            <a href="../account/wishlist.html" class="mobile-nav-item">
+                <span class="mobile-nav-icon">&#9825;</span>
+                <span>Wishlist</span>
+            </a>
+            <a href="../auth/login.html" class="mobile-nav-item">
+                <span class="mobile-nav-icon">&#128100;</span>
+                <span>Account</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
